@@ -1,0 +1,495 @@
+/**
+ * Project specific styling.
+ */
+//base page styles
+p {
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  text {
+    font-family: "Benton Sans", Helvetica, Arial, sans-serif !important;
+  }
+  
+  .article-author-hcard-item, .article-author-hcard__twitter, .article-author-hcard__email, .article-author-hcard__phone {
+    font-family: "Benton Sans Condensed Medium",Helvetica,Arial,sans-serif !important;
+    font-size: 13px;
+    display: inline-block;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    color: #909090 !important;
+    text-decoration: none !important;
+  }
+  
+    p {
+      -webkit-font-smoothing: antialiased;
+    }
+  
+  .article-author-hcard {
+    margin-bottom: 1em;
+  }
+  
+  .article-author-contact {
+    border-top: 1px solid #d3d3d3;
+    margin-top: 2em;
+    padding-top: 1em;
+    zoom: 1;
+    clear: both;
+  }
+  
+  .article-author-contact a {
+    font-weight:lighter !important;
+  }
+  
+  .article-author-contact p {
+   margin-bottom: 0 !important;
+  }
+  .source {
+    font-family: "Benton Sans", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size:0.6em;
+    color: #888;
+    text-align:left;
+  }
+  
+  .content-scroll {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: auto;
+  }
+  
+  .elex-header {
+      text-align: center;
+      max-width: 825px;
+  }
+  
+  .elex-header h1 {
+      padding-top: 0.3em;
+      line-height: 1.1em;
+  }
+  
+  .elex-header h5,
+  .elex-header h5 span {
+      text-transform: uppercase;
+      font-size: .9em;
+      letter-spacing: .08em;
+      padding-top: 40px;
+  }
+  
+  section.container-lg {
+      max-width: 700px !important;
+  }
+  
+  text {
+    font-family: "Benton Sans", Helvetica, Arial, sans-serif !important;
+  }
+  
+  p {
+      max-width: 520px;
+      font-size: 15px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .elex-header h5 span {
+      font-size: .9em;
+      letter-spacing: .1em;
+  }
+  
+  .elex-header h5 span,
+  .elex-header .byline {
+      color: black;
+      font-weight: bold;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  
+  .elex-header .byline span {
+      font-weight: normal;
+  }
+  
+  section.body {
+      padding-top: 20px;
+      margin-bottom: 45px;
+      max-width: 525px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  section.body p {
+      max-width: 525px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  h2 {
+      font-size: 1.4em;
+      line-height: 1.4em;
+      text-align: center;
+      font-family: 'Benton Sans';
+      font-weight: bold;
+      margin-bottom: 20px;
+  }
+  
+  .rule {
+      margin-left: auto;
+      margin-right: auto;
+      width: 33%;
+      border-bottom: 1px solid #dfdfdf;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+  }
+  
+  .mapboxgl-ctrl-logo, .mapboxgl-ctrl-attrib {
+      display:none !important;
+  }
+  
+  #wrapper {
+      width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  //dataviz styles
+  .powerline {
+      stroke-dasharray: 5, 5;
+      stroke: #333;
+  }
+  
+  .slide {
+      .byline a {
+          color: #888 !important;
+      }
+      .byline {
+          line-height: 140%;
+          font-family: "Benton Sans", Helvetica, Arial, sans-serif;
+          font-weight: 400;
+          font-size: 0.6em;
+          color: #888;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          text-align: left;
+      }
+      .chart .c3-circle {
+          stroke-width: 4;
+      }
+      .chart .c3-line {
+          stroke-width: 6px !important;
+      }
+      .chart-tooltip {
+          background-color: rgba(0, 0, 0, 0.8);
+          color: #FFFFFF;
+          font-size: 0.85em;
+          padding: 0.5em 1em;
+          .tooltip-label {
+              font-weight: 900;
+              display: inline-block;
+              padding-right: 0.5em;
+          }
+      }
+      .legendary {
+          padding: 4px;
+          color: #fff;
+          font-weight: bold;
+          border-radius: 5px;
+          padding: 0 7px;
+          margin-bottom: 3px;
+          display: inline-block;
+      }
+      .chatter {
+          line-height: 140%;
+          font-size: 0.9em;
+      }
+      .chartTitle {
+          font-size: 1.5em;
+          font-weight: 900;
+      }
+      @media (max-width:800px) {
+          #wrapper,
+          .slide {
+              width: 100%;
+          }
+      }
+      @media (max-width:500px) {
+          #wrapper {
+              width: 100%;
+          }
+      }
+      /*RED SHADED RAMP*/
+      .red1 {
+          fill: #F2AC93;
+          background-color: #F2AC93;
+      }
+      .red2 {
+          fill: #F28670;
+          background-color: #F28670;
+      }
+      .red3 {
+          fill: #F2614C;
+          background-color: #F2614C;
+      }
+      .red4 {
+          fill: #C22A22;
+          background-color: #C22A22;
+      }
+      .red5 {
+          fill: #9C0004;
+          background-color: #9C0004;
+      }
+      /*ORANGE SHADED RAMP*/
+      .orange1 {
+          fill: #F2D2A4;
+          background-color: #F2D2A4;
+      }
+      .orange2 {
+          fill: #F2AF80;
+          background-color: #F2AF80;
+      }
+      .orange3 {
+          fill: #E07242;
+          background-color: #E07242;
+      }
+      .orange4 {
+          fill: #C2421F;
+          background-color: #C2421F;
+      }
+      .orange5 {
+          fill: #822010;
+          background-color: #822010;
+      }
+      /*BLUE SHADED RAMP*/
+      .blue1 {
+          fill: #D1E6E1;
+          background-color: #D1E6E1;
+      }
+      .blue2 {
+          fill: #A7E6E3;
+          background-color: #A7E6E3;
+      }
+      .blue3 {
+          fill: #67B4C2;
+          background-color: #67B4C2;
+      }
+      .blue4 {
+          fill: #3580A3;
+          background-color: #3580A3;
+      }
+      .blue5 {
+          fill: #0D4673;
+          background-color: #0D4673;
+      }
+      /*GREEN SHADED RAMP*/
+      .green1 {
+          fill: #C7E5B5;
+          background-color: #C7E5B5;
+      }
+      .green2 {
+          fill: #9EE384;
+          background-color: #9EE384;
+      }
+      .green3 {
+          fill: #5BBF48;
+          background-color: #5BBF48;
+      }
+      .green4 {
+          fill: #299E3D;
+          background-color: #299E3D;
+      }
+      .green5 {
+          fill: #118241;
+          background-color: #118241;
+      }
+      /*GREY SHADED RAMP*/
+      .gray1 {
+          fill: #ddd;
+          background-color: #ddd;
+      }
+      .gray2 {
+          fill: #CCC;
+          background-color: #CCC;
+      }
+      .gray3 {
+          fill: #969696;
+          background-color: #969696;
+      }
+      .gray4 {
+          fill: #636363;
+          background-color: #636363;
+          color: #fff;
+      }
+      .gray5 {
+          fill: #333333;
+          background-color: #333333;
+          color: #fff;
+      }
+      /*-- Chart --*/
+      .c3 svg {
+          font: 10px sans-serif;
+          -webkit-tap-highlight-color: transparent;
+      }
+      .c3 path,
+      .c3 line {
+          fill: none;
+          stroke: #000;
+      }
+      .c3 text {
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+      }
+      .c3-legend-item-tile,
+      .c3-xgrid-focus,
+      .c3-ygrid,
+      .c3-event-rect,
+      .c3-bars path {
+          shape-rendering: crispEdges;
+      }
+      .c3-chart-arc path {
+          stroke: #fff;
+      }
+      .c3-chart-arc text {
+          fill: #fff;
+          font-size: 13px;
+      }
+      /*-- Axis --*/
+      /*-- Grid --*/
+      .c3-grid line {
+          stroke: #aaa;
+      }
+      .c3-grid text {
+          fill: #aaa;
+      }
+      .c3-xgrid,
+      .c3-ygrid {
+          stroke-dasharray: 3 3;
+      }
+      /*-- Text on Chart --*/
+      .c3-text.c3-empty {
+          fill: #808080;
+          font-size: 2em;
+      }
+      /*-- Line --*/
+      .c3-line {
+          stroke-width: 1px;
+      }
+      /*-- Point --*/
+      .c3-circle._expanded_ {
+          stroke-width: 1px;
+          stroke: white;
+      }
+      .c3-selected-circle {
+          fill: white;
+          stroke-width: 2px;
+      }
+      /*-- Bar --*/
+      .c3-bar {
+          stroke-width: 0;
+      }
+      .c3-bar._expanded_ {
+          fill-opacity: 0.75;
+      }
+      /*-- Focus --*/
+      .c3-target.c3-focused {
+          opacity: 1;
+      }
+      .c3-target.c3-focused path.c3-line,
+      .c3-target.c3-focused path.c3-step {
+          stroke-width: 2px;
+      }
+      .c3-target.c3-defocused {
+          opacity: 0.3 !important;
+      }
+      /*-- Region --*/
+      .c3-region {
+          fill: steelblue;
+          fill-opacity: 0.1;
+      }
+      /*-- Brush --*/
+      .c3-brush .extent {
+          fill-opacity: 0.1;
+      }
+      /*-- Select - Drag --*/
+      /*-- Legend --*/
+      .c3-legend-item {
+          font-size: 12px;
+      }
+      .c3-legend-item-hidden {
+          opacity: 0.15;
+      }
+      .c3-legend-background {
+          opacity: 0.75;
+          fill: white;
+          stroke: lightgray;
+          stroke-width: 1;
+      }
+      /*-- Title --*/
+      .c3-title {
+          font: 14px sans-serif;
+      }
+      /*-- Tooltip --*/
+      .c3-tooltip-container {
+          z-index: 10;
+      }
+      .c3-tooltip {
+          border-collapse: collapse;
+          border-spacing: 0;
+          background-color: #fff;
+          empty-cells: show;
+          -webkit-box-shadow: 7px 7px 12px -9px #777777;
+          -moz-box-shadow: 7px 7px 12px -9px #777777;
+          box-shadow: 7px 7px 12px -9px #777777;
+          opacity: 0.9;
+      }
+      .c3-tooltip tr {
+          border: 1px solid #CCC;
+      }
+      .c3-tooltip th {
+          background-color: #aaa;
+          font-size: 14px;
+          padding: 2px 5px;
+          text-align: left;
+          color: #FFF;
+      }
+      .c3-tooltip td {
+          font-size: 13px;
+          padding: 3px 6px;
+          background-color: #fff;
+          border-left: 1px dotted #999;
+      }
+      .c3-tooltip td>span {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          margin-right: 6px;
+      }
+      .c3-tooltip td.value {
+          text-align: right;
+      }
+      /*-- Area --*/
+      .c3-area {
+          stroke-width: 0;
+          opacity: 0.2;
+      }
+      /*-- Arc --*/
+      .c3-chart-arcs-title {
+          dominant-baseline: middle;
+          font-size: 1.3em;
+      }
+      .c3-chart-arcs .c3-chart-arcs-background {
+          fill: #e0e0e0;
+          stroke: none;
+      }
+      .c3-chart-arcs .c3-chart-arcs-gauge-unit {
+          fill: #000;
+          font-size: 16px;
+      }
+      .c3-chart-arcs .c3-chart-arcs-gauge-max {
+          fill: #777;
+      }
+      .c3-chart-arcs .c3-chart-arcs-gauge-min {
+          fill: #777;
+      }
+      .c3-chart-arc .c3-gauge-value {
+          fill: #000;
+          /*  font-size: 28px !important;*/
+      }
+  }
